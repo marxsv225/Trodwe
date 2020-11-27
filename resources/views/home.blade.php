@@ -94,7 +94,7 @@
                                 </ul>
                             </div>
                             <div class="product__item__text">
-                                <h6><a href="#">{{$produit->nom}}</a></h6>
+                                <h6><a href="{{route('details_produit', $produit->id)}}">{{$produit->nom}}</a></h6>
                                 <div class="rating">
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>

@@ -15,3 +15,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [MainShopController::class, 'index']);
+
+//Shop routes
+Route::get('/produit/{id}', [MainShopController::class, 'produit'])->name('details_produit');

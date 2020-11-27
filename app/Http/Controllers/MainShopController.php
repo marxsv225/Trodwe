@@ -36,9 +36,11 @@ class MainShopController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function produit(Request $request)
     {
-        //
+        //Requete de recuperation d'un produit a afficher
+        $produit = Produit::find($request->id);
+        return view('shop.produit', compact('produit'));
     }
 
     /**
