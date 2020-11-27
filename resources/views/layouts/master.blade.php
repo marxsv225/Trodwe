@@ -123,62 +123,42 @@
         @yield('content')
 
 
-        <!-- Instagram Begin -->
-        <div class="instagram">
-            <div class="container-fluid">
+        <!-- Services Section Begin -->
+        <section class="services spad">
+            <div class="container">
                 <div class="row">
-                    <div class="col-lg-2 col-md-4 col-sm-4 p-0">
-                        <div class="instagram__item set-bg" data-setbg="{{asset('images/instagram/insta-1.jpg')}}">
-                            <div class="instagram__text">
-                                <i class="fa fa-instagram"></i>
-                                <a href="#">@ ashion_shop</a>
-                            </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="services__item">
+                            <i class="fa fa-car"></i>
+                            <h6>Livraison garantie</h6>
+                            <p>Pour tout achat > 50000 F</p>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-4 p-0">
-                        <div class="instagram__item set-bg" data-setbg="{{asset('images/instagram/insta-2.jpg')}}">
-                            <div class="instagram__text">
-                                <i class="fa fa-instagram"></i>
-                                <a href="#">@ ashion_shop</a>
-                            </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="services__item">
+                            <i class="fa fa-money"></i>
+                            <h6>Remboursement</h6>
+                            <p>en cas de non satisfaction</p>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-4 p-0">
-                        <div class="instagram__item set-bg" data-setbg="{{asset('images/instagram/insta-3.jpg')}}">
-                            <div class="instagram__text">
-                                <i class="fa fa-instagram"></i>
-                                <a href="#">@ ashion_shop</a>
-                            </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="services__item">
+                            <i class="fa fa-support"></i>
+                            <h6>Assistance 24/7</h6>
+                            <p>dédiée à nos clients</p>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-4 p-0">
-                        <div class="instagram__item set-bg" data-setbg="{{asset('images/instagram/insta-4.jpg')}}">
-                            <div class="instagram__text">
-                                <i class="fa fa-instagram"></i>
-                                <a href="#">@ ashion_shop</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-4 p-0">
-                        <div class="instagram__item set-bg" data-setbg="{{asset('images/instagram/insta-5.jpg')}}">
-                            <div class="instagram__text">
-                                <i class="fa fa-instagram"></i>
-                                <a href="#">@ ashion_shop</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-4 p-0">
-                        <div class="instagram__item set-bg" data-setbg="{{asset('images/instagram/insta-6.jpg')}}">
-                            <div class="instagram__text">
-                                <i class="fa fa-instagram"></i>
-                                <a href="#">@ ashion_shop</a>
-                            </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="services__item">
+                            <i class="fa fa-credit-card-alt"></i>
+                            <h6>Payement Securisé</h6>
+                            <p>pour vos transactions</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Instagram End -->
+        </section>
+        <!-- Services Section End -->
 
         <!-- Footer Section Begin -->
         <footer class="footer">
