@@ -1,5 +1,6 @@
 @extends('layouts.master')
     @section('content')
+    {{-- {{dd($categories)}} --}}
         <!-- Categories Section Begin -->
         <section class="categories">
             <div class="container-fluid">
@@ -72,11 +73,13 @@
                 <div class="col-lg-8 col-md-8">
                     <ul class="filter__controls">
                         <li class="active" data-filter="*">Tout</li>
-                        <li data-filter=".women">Femmes</li>
-                        <li data-filter=".men">Hommes</li>
-                        <li data-filter=".kid">Enfants</li>
-                        <li data-filter=".accessories">Accessoires</li>
-                        <li data-filter=".cosmetic">Beauté</li>
+
+                    @foreach ($categories as $categorie)
+
+                        <li data-filter=".{{$categorie->nom}}">{{$categorie->nom}}</li>
+
+                    @endforeach
+
                     </ul>
                 </div>
             </div>

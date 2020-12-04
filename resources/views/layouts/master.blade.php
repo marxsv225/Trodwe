@@ -71,7 +71,8 @@
                     <div class="col-xl-6 col-lg-7">
                         <nav class="header__menu">
                             <ul>
-                                <li class="active"><a href="./index.html">Accueil</a></li>
+                                <li class="active"><a href="{{route('home')}}">Accueil</a></li>
+
                                 <li><a href="#">Femmes</a></li>
                                 <li><a href="#">Hommes</a></li>
                                 <li><a href="#">Enfants</a>

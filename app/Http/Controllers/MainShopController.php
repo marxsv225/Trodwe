@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use App\Models\Produit;
 use Illuminate\Http\Request;
 
@@ -18,6 +19,14 @@ class MainShopController extends Controller
         $produits = Produit::take(8)->get();
         // dd($produits);
         return view('home', compact('produits'));
+    }
+
+    public function viewByCategory(Request $request){
+        
+        //Recuperer les categories en ligne
+
+        $produits = Produit::where('category_id', $request->id);
+        return view('shop.categorie', compact('produits'));
     }
 
     /**

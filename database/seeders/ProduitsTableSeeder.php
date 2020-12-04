@@ -20,6 +20,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->prix_ht = "7000";
         $produit->description = "Loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt";
         $produit->photo = "product-2.jpg";
+        $produit->category_id = "1";
         $produit->save();
 
         $produit = new Produit();
@@ -27,6 +28,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->prix_ht = "8000";
         $produit->description = "Loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt";
         $produit->photo = "product-3.jpg";
+        $produit->category_id = "2";
         $produit->save();
 
         $produit = new Produit();
@@ -34,6 +36,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->prix_ht = "6000";
         $produit->description = "Loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt";
         $produit->photo = "product-4.jpg";
+        $produit->category_id = "1";
         $produit->save();
 
         $produit = new Produit();
@@ -41,6 +44,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->prix_ht = "9000";
         $produit->description = "Loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt";
         $produit->photo = "product-5.jpg";
+        $produit->category_id = "1";
         $produit->save();
 
         $produit = new Produit();
@@ -48,6 +52,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->prix_ht = "8000";
         $produit->description = "Loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt";
         $produit->photo = "product-6.jpg";
+        $produit->category_id = "2";
         $produit->save();
 
         $produit = new Produit();
@@ -55,6 +60,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->prix_ht = "5000";
         $produit->description = "Loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt";
         $produit->photo = "product-7.jpg";
+        $produit->category_id = "2";
         $produit->save();
 
         $produit = new Produit();
@@ -62,6 +68,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->prix_ht = "7000";
         $produit->description = "Loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt";
         $produit->photo = "product-8.jpg";
+        $produit->category_id = "1";
         $produit->save();
 
         $produit = new Produit();
@@ -69,6 +76,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->prix_ht = "9000";
         $produit->description = "Loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt";
         $produit->photo = "shop-1.jpg";
+        $produit->category_id = "2";
         $produit->save();
 
         $produit = new Produit();
@@ -76,6 +84,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->prix_ht = "12000";
         $produit->description = "Loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt";
         $produit->photo = "shop-2.jpg";
+        $produit->category_id = "6";
         $produit->save();
 
         $produit = new Produit();
@@ -83,6 +92,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->prix_ht = "25000";
         $produit->description = "Loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt";
         $produit->photo = "shop-3.jpg";
+        $produit->category_id = "2";
         $produit->save();
 
         $produit = new Produit();
@@ -90,6 +100,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->prix_ht = "15000";
         $produit->description = "Loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt";
         $produit->photo = "shop-4.jpg";
+        $produit->category_id = "2";
         $produit->save();
 
         $produit = new Produit();
@@ -97,6 +108,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->prix_ht = "35000";
         $produit->description = "Loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt";
         $produit->photo = "shop-5.jpg";
+        $produit->category_id = "6";
         $produit->save();
 
         $produit = new Produit();
@@ -104,6 +116,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->prix_ht = "9000";
         $produit->description = "Loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt";
         $produit->photo = "shop-6.jpg";
+        $produit->category_id = "6";
         $produit->save();
     }
 }
