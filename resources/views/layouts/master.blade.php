@@ -73,14 +73,18 @@
                             <ul>
                                 <li class="active"><a href="{{route('home')}}">Accueil</a></li>
 
-                                <li><a href="#">Femmes</a></li>
-                                <li><a href="#">Hommes</a></li>
-                                <li><a href="#">Enfants</a>
+                                @foreach ($categories as $category)
+
+                                    <li><a href="{{route('view_categorie', ['id'=>$category->id])}}">{{$category->nom}}</a></li>
+
+                                @endforeach
+
+                                {{-- <li><a href="#">Enfants</a>
                                     <ul class="dropdown">
                                         <li><a href="#">Garçons</a></li>
                                         <li><a href="#">Filles</a></li>
                                     </ul>
-                                </li>
+                                </li> --}}
                                 {{-- <li><a href="./shop.html">Shop</a></li> --}}
                                 {{-- <li><a href="#">Pages</a>
                                     <ul class="dropdown">
@@ -91,7 +95,7 @@
                                     </ul>
                                 </li> --}}
                                 {{-- <li><a href="./blog.html">Blog</a></li> --}}
-                                <li><a href="./contact.html">Contact</a></li>
+                                {{-- <li><a href="./contact.html">Contact</a></li> --}}
                             </ul>
                         </nav>
                     </div>

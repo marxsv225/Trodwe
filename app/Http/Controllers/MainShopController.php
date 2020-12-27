@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use App\Models\Produit;
+use App\Models\SousCategory;
 use Illuminate\Http\Request;
 
 class MainShopController extends Controller
@@ -25,8 +26,10 @@ class MainShopController extends Controller
         
         //Recuperer les categories en ligne
 
-        $produits = Produit::where('category_id', $request->id);
-        return view('shop.categorie', compact('produits'));
+        $produits = Produit::where('sous_category_id', $request->id)->get();
+        $sousCategories = SousCategory::where('category_id', $request->id)->get();
+
+        return view('shop.categorie', compact('produits', 'sousCategories'));
     }
 
     /**
@@ -51,7 +54,6 @@ class MainShopController extends Controller
         $produit = Produit::find($request->id);
         return view('shop.produit', compact('produit'));
     }
-
     /**
      * Display the specified resource.
      *

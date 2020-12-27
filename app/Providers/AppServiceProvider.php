@@ -25,6 +25,6 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
-        view()->composer(['shop', 'home'], HeaderComposer::class);
+        view()->composer(['shop', 'home', 'shop/categorie', 'shop/produit'], HeaderComposer::class);
     }
 }

@@ -17,37 +17,17 @@ class CategoriesTableSeeder extends Seeder
         //
         $categorie = new Category();
         $categorie->nom="Hommes";
-        $categorie->is_online="1";
+        $categorie->slug="hommes";
         $categorie->save();
 
         $categorie = new Category();
         $categorie->nom="Femmes";
-        $categorie->is_online="1";
+        $categorie->slug="femmes";
         $categorie->save();
 
         $categorie = new Category();
         $categorie->nom="Enfants";
-        $categorie->is_online="1";
-        $categorie->save();
-
-        $categorie = new Category();
-        $categorie->nom="Garçons";
-        $categorie->is_online="1";
-        $categorie->save();
-
-        $categorie = new Category();
-        $categorie->nom="Filles";
-        $categorie->is_online="1";
-        $categorie->save();
-
-        $categorie = new Category();
-        $categorie->nom="Accessoires";
-        $categorie->is_online="1";
-        $categorie->save();
-
-        $categorie = new Category();
-        $categorie->nom="Beaute";
-        $categorie->is_online="1";
+        $categorie->slug="enfants";
         $categorie->save();
     }
 }

@@ -76,7 +76,7 @@
 
                     @foreach ($categories as $categorie)
 
-                        <li data-filter=".{{$categorie->nom}}">{{$categorie->nom}}</li>
+                        <li data-filter=".{{$categorie->id}}">{{$categorie->nom}}</li>
 
                     @endforeach
 
@@ -86,7 +86,7 @@
             <div class="row property__gallery">
                 @foreach ($produits as $produit)
 
-                    <div class="col-lg-3 col-md-4 col-sm-6 mix women">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mix {{$produit->category_id}}">
                         <div class="product__item">
                             <div class="product__item__pic set-bg" data-setbg="{{asset('images/product/'.$produit->photo)}}">
                                 <div class="label new">Nouveau</div>
