@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Controllers\MainShopController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,8 +13,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [MainShopController::class, 'index'])->name('home');
+Auth::routes();
 
-//Shop routes
-Route::get('/produit/{id}', [MainShopController::class, 'produit'])->name('details_produit');
-Route::get('/categorie/{id}', [MainShopController::class, 'viewByCategory'])->name('view_categorie');
+Route::get('/', 'HomeController@index')->name('home');
+
+Route::get('shop', 'ShopController@index')->name('shop.index');
+Route::get('shop/{product}', 'ShopController@show')->name('shop.show');
+
+Route::get('cart', 'CartController@index')->name('cart.index');
+Route::post('cart', 'CartController@store')->name('cart.store');
+Route::patch('cart/{product}', 'CartController@update')->name('cart.update');
+Route::delete('cart/{product}', 'CartController@destroy')->name('cart.destroy');
+
+Route::post('save-for-later/{product}', 'SaveForLaterController@store')->name('saveforlater.store');
+Route::post('save-for-later/{product}/move-to-cart', 'SaveForLaterController@moveToCart')->name('saveforlater.movetocart');
+Route::delete('save-for-later/{product}', 'SaveForLaterController@destroy')->name('saveforlater.destroy');
+
+Route::get('checkout', 'CheckoutController@index')->name('checkout.index');
+
+Route::post('coupon', 'CouponController@store')->name('coupon.store');
+Route::delete('coupon', 'CouponController@destroy')->name('coupon.destroy');
