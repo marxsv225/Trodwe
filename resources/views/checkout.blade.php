@@ -11,7 +11,7 @@
 <div class="content-box">
 
     <div class="col-md-12">
-        <div class="alert alert-success" style="margin-top:20px">
+        <div class="alert alert-info" style="margin-top:20px">
             <a href="{{ route('home') }}" class="section">Home</a>
             <i class="right angle icon divider"> > </i>
             <a class="active section">Payement</a>
@@ -185,39 +185,39 @@
                 <div class="clearfix"></div><hr/>
 
                 <div class="ui grid_2">
-                    <div class="row two columns">
-                        <div class="column col-md-6">
-                            <div class="ui list">
-                                <div class="item">Sous-total</div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <div class="">
+                                <div class="">Sous-total</div>
 
                                 @if(session()->has('coupon'))
-                                    <div class="item">Remise ({{ $code }})</div>
+                                    <div class="">Remise ({{ $code }})</div>
 
-                                    <div class="item">Nouveau Sous-total </div>
+                                    <div class="">Nouveau Sous-total </div>
                                 @endif
 
-                                <div class="item">Taxe</div>
+                                <div class="">Taxe</div>
 
-                                <div class="item">
+                                <div class="">
                                     <div class="header">Total</div>
                                 </div>
                             </div>
     
                         </div>
                         
-                        <div class="column right aligned col-md-6">
-                            <div class="ui list">
-                                <div class="item">{{ $subtotal }}</div>
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <div class="">
+                                <div class="">{{ $subtotal }}</div>
 
                                 @if(session()->has('coupon'))
-                                    <div class="item">{{ $discount }}</div>
+                                    <div class="">{{ $discount }}</div>
 
-                                    <div class="item">{{ $newSubtotal}}</div>
+                                    <div class="">{{ $newSubtotal}}</div>
                                 @endif
 
-                                <div class="item">{{ $newTax }}</div>
+                                <div class="">{{ $newTax }}</div>
 
-                                <div class="item">
+                                <div class="">
                                     <div class="header">{{ $newTotal }}</div>
                                 </div>
                             </div>

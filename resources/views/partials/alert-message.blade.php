@@ -1,5 +1,5 @@
 @if(session()->has('success'))
-    <div class="ui positive message">
+    <div class="alert alert-success message">
         <i class="close icon"></i>
         <div class="header">
             {{ session('success') }}
@@ -22,7 +22,7 @@
     <div class="ui error message">
         <i class="close icon"></i>
         <div class="header">
-            There were some errors with your submission.
+            Une erreur est survenue lors de la validation.
         </div>
         <ul class="list">
             @foreach ($errors->all() as $error)
