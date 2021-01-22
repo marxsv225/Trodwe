@@ -3,9 +3,8 @@
 @section('content')
 
 <div class="content-box">
-
     <div class="col-md-12">
-        <div class="alert alert-success" style="margin-top:20px">
+        <div class="alert alert-info" style="margin-top:20px">
             <a href="{{ route('home') }}" class="section">Home</a>
             <i class="right angle icon divider"> > </i>
             <a href="{{ route('shop.index') }}" class="section">Shop</a>
@@ -13,7 +12,6 @@
             <a class="active section">{{ $categoryName }}</a>
         </div>
     </div>
-
 </div>
 
 <div class="ui divider"></div>
@@ -49,19 +47,47 @@
 	<div class="mens-toolbar">
           	<div class="sort">
                	<div class="sort-by">
-		            <label>Sort By</label>
+		            {{-- <label>Sort By</label>
 		            <select>
-                        <a class="" href="{{ route('shop.index', ['category' => request()->category, 'sort' => 'low_high']) }}">
-                            <option value="">Plus Bas -> Plus Grand</option>
+                            <option value="{{ route('shop.index', ['category' => request()->category, 'sort' => 'low_high']) }}"><a class="item" href="{{ route('shop.index', ['category' => request()->category, 'sort' => 'low_high']) }}">
+                            Plus Bas -> Plus Grand
+                        </a></option>
+                        
+                            <option value=""><a class="item" href="{{ route('shop.index', ['category' => request()->category, 'sort' => 'high_low']) }}">
+                            Plus Grand -> Plus Bas
+                        </a></option>
+		            </select> --}}
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button" data-toggle="dropdown">Trier du
+                        <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="item" href="{{ route('shop.index', ['category' => request()->category, 'sort' => 'low_high']) }}">
+                                    Plus Bas -> Plus Grand
+                                </a>
+                            </li>
+                            <li>
+                                <a class="item" href="{{ route('shop.index', ['category' => request()->category, 'sort' => 'high_low']) }}">
+                                    Plus Grand -> Plus Bas
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    {{-- <div class="ui dropdown item">
+                    Tri Par prix
+                    <div class="menu">
+                        <a class="item" href="{{ route('shop.index', ['category' => request()->category, 'sort' => 'low_high']) }}">
+                            Plus Bas -> Plus Grand
                         </a>
                         <a class="item" href="{{ route('shop.index', ['category' => request()->category, 'sort' => 'high_low']) }}">
-                            <option value="">Plus Grand -> Plus Bas</option>
+                            Plus Grand -> Plus Bas
                         </a>
-		            </select>
+                    </div>
+                </div> --}}
 		        </div>
     		</div>
 	        <div class="pager">
-	            
+
 		   		<div class="clearfix"></div>
 	    	</div>
      	    <div class="clearfix"></div>

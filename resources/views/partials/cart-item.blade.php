@@ -68,7 +68,7 @@
                 <button class="btn btn-danger" data-remove-cart="{{ $item->rowId }}">
                 <i class="trash icon"></i> Supprimer
                 </button>
-
+    
                 <button class="btn btn-default" data-save-for-later="{{ $item->rowId }}">
                     <i class="heart icon"></i> Sauver pour plus tard
                 </button>

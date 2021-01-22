@@ -38,7 +38,7 @@ class CartController extends Controller
         if($exists->isNotEmpty()) {
             return redirect()
                 ->route('cart.index')
-                ->withWarning('Item already exists in your cart.');
+                ->withWarning('Cet article existe déjà dans votre panier.');
         }
 
         Cart::add($request->id, $request->name, 1, $request->price)
@@ -46,7 +46,7 @@ class CartController extends Controller
 
         return redirect()
             ->route('cart.index')
-            ->withSuccess('Item was added to your cart.')
+            ->withSuccess('Article ajouté dans votre panier.')
             ->withInfo("{$request->name}");
     }
 

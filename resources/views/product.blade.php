@@ -4,21 +4,9 @@
 
 @section('content')
 
-    {{-- <div class="ui container masthead">
-
-        <div class="ui breadcrumb">
-            <a href="{{ route('home') }}" class="section">Home</a>
-            <i class="right angle icon divider"></i>
-            <a href="{{ route('shop.index') }}" class="section">Shop</a>
-            <i class="right angle icon divider"></i>
-            <div class="active section">{{ $product->name }}</div>
-        </div>
-
-    </div> --}}
-
     <div class="content-box">
         <div class="col-md-12">
-            <div class="alert alert-success" style="margin-top:20px;">
+            <div class="alert alert-info" style="margin-top:20px;">
                 <a href="{{ route('home') }}" class="section">Home</a>
                 <i class="right angle icon divider"> > </i>
                 <a href="{{ route('shop.index') }}" class="section">Shop</a>
@@ -121,10 +109,10 @@
               <section class="slider_flex">
 				  <div class="flexslider">
 					<ul class="slides">
-						<li><img src="images/laptop.jpg" class="img-responsive" alt="1"/></li>
-						<li><img src="images/laptop.jpg" class="img-responsive" alt="2"/></li>
-						<li><img src="images/laptop.jpg" class="img-responsive" alt="3"/></li>
-						<li><img src="images/laptop.jpg" class="img-responsive" alt="4"/></li>
+						<li><img src="{{asset('images/lap1.jpg')}}" class="img-responsive" alt="1"/></li>
+						<li><img src="{{asset('images/lap4.jpg')}}" class="img-responsive" alt="2"/></li>
+						<li><img src="{{asset('images/lap5.jpg')}}" class="img-responsive" alt="3"/></li>
+						<li><img src="{{asset('images/laptop.jpg')}}" class="img-responsive" alt="4"/></li>
 				    </ul>
 				  </div>
 	          </section>
@@ -135,10 +123,6 @@
        <div class="toogle">
      	<h2>Product Details</h2>
      	<p class="m_text2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero.</p>
-     </div>
-     <div class="toogle">
-     	<h2>More Information</h2>
-     	<p class="m_text2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
      </div>
         <div class="single_span_3">
                 @include('partials.might-like')

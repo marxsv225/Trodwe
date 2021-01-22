@@ -17,7 +17,7 @@
                 <h4>Aide</h4>
                 <ul class="f_nav">
                     <li><a href="#">FAQs</a></li>
-                </ul>				
+                </ul>
             </div>
             <div class="col-md-3 box_4">
                 <h4>Comptes</h4>
@@ -51,18 +51,18 @@
 			<div class="span1_of_2">
 				<h5><a href="#">contactez-nous <span> &gt;</span> </a> </h5>
 				<div class="social-icons">
-					     <ul>
-					        <li><a href="#" target="_blank"></a></li>
-					        <li><a href="#" target="_blank"></a></li>
-					        <li><a href="#" target="_blank"></a></li>
-					        <li><a href="#" target="_blank"></a></li>
-					        <li class="last2"><a href="#" target="_blank"></a></li>
-						</ul>
+					<ul>
+						<li><a href="#" target="_blank"></a></li>
+						<li><a href="#" target="_blank"></a></li>
+						<li><a href="#" target="_blank"></a></li>
+						<li><a href="#" target="_blank"></a></li>
+						<li class="last2"><a href="#" target="_blank"></a></li>
+					</ul>
 				</div>
 			</div>
 			<div class="clearfix"></div>
 		</div>
 		<div class="copy">
-		   <p>© 2021 Tous droits réservés par <a href="#">VAKA Group</a> </p>
+		   <p>TRODWE © 2021 Tous droits réservés par <a href="#">VAKA Group</a> </p>
 		</div>
      </div>

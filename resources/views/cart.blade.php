@@ -4,7 +4,7 @@
 <div class="content-box">
 
     <div class="col-md-12">
-        <div class="alert alert-success" style="margin-top:20px">
+        <div class="alert alert-info" style="margin-top:20px">
             <a href="{{ route('home') }}" class="section">Home</a>
             <i class="right angle icon divider"></i>
             <a class="active section">Cart</a>
@@ -13,140 +13,12 @@
 
 </div>
 
-{{-- <div class="clearfix"></div>
-
-<div class="contnt">
-    <div class="content-box">
-
-        <div class="col-md-12">
-
-            @include('partials.alert-message')
-
-            @if(Cart::count())
-
-                <h1 class="ui header">{{ Cart::count() }} article(s) dans mon panier</h1>
-                <p class="lead">Vous avez des articles dans votre panier</p>
-
-                <div class="clearfix"></div>
-
-                <div class="grid_2">
-
-                    @foreach (Cart::content() as $item)
-
-                        @include('partials.cart-item')
-
-                    @endforeach
-
-                </div>
-
-                @include('partials.coupon-section')
-
-                <div class="clearfix"></div> <hr/>
-
-                <div class="">
-                    <div class="row">
-                        <div class="col-md-6">
-                            Nous vous offrons la livraison. :)
-                        </div>
-                        <div class="col-md-6">
-                            <table class="table table-responsive">
-                                <tbody>
-                                    <tr>
-                                        <td>Sous-total:</td>
-                                        <td>{{ $subtotal }}</td>
-                                    </tr>
-
-                                    @if(session()->has('coupon'))
-                                        <tr>
-                                            <td>Remise ({{ $code }}):</td>
-                                            <td>{{ $discount }}</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Nouveau Sous-total:</td>
-                                            <td>{{ $newSubtotal }}</td>
-                                        </tr>
-                                    @endif
-    
-                                    <tr>
-                                        <td>Taxe ({{ $tax }}):</td>
-                                        <td>{{ $newTax }}</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td><h4 class="ui header">Total:</h2></td>
-                                        <td><h4 class="ui header">{{ $newTotal }}</h4></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div><hr/>
-    
-                <div class="clearfix"></div>
-    
-                <div>
-                    <a href="{{ route('shop.index') }}" class="ui button">
-                        <i class="shopping cart icon"></i> Continuer la visite
-                    </a>
-                    <a href="{{ route('checkout.index') }}" class="ui right floated primary button">
-                        <i class="cc visa icon"></i> Proceder au payement
-                    </a>
-                </div>
-
-            @else
-
-                <h1 class="ui header">Aucun article dans votre panier !</h1>
-                <p class="lead">Visitez notre boutique pour choisir vos produits</p>
-
-                <a class="ui button" href="{{ route('shop.index') }}">
-                    <i class="shopping cart icon"></i>
-                    Continuer la visite
-                </a>
-
-            @endif
-
-            <div class="clearfix"></div>
-
-            @if(Cart::instance('saveForLater')->count())
-
-                <h1 class="ui header">
-                    {{ Cart::instance('saveForLater')->count() }} article(s) enregistré(s) pour plus tard
-                </h1>
-                <p class="lead">Vous avez quelques articles dans votre panier</p>
-
-                <div class="clearfix"></div>
-
-                <div class="ui divided items">
-
-                    @foreach (Cart::instance('saveForLater')->content() as $item)
-
-                        @include('partials.saved-for-later-item')
-
-                    @endforeach
-
-                </div>
-
-            @else
-
-                <h1 class="ui header">Pas d'articles enregistrés pour plus tard!</h1>
-                <p class="lead">Visitez notre boutique pour choisir vos produits</p>
-
-            @endif
-
-        </div>
-
-    </div>
-</div>
-
-<div class="clearfix"></div>
-
-@include('partials.might-like') --}}
 
 
-<div class="">
+
+
     <div class="content_box">
-        <div class="grid_1">
+        <div class="grid_1 men">
             @include('partials.alert-message')
             <div class="col-md-12 box_2">
                 <div class="section_group">
@@ -214,8 +86,9 @@
                         <div class="clearfix"></div>
             
                         <div>
-                            <a href="{{ route('shop.index') }}" class="ui btn btn-info">
-                                <i class="shopping cart icon"></i> Continuer la visite
+                            <a style="height:35px" class="btn btn-info" href="{{ route('shop.index') }}">
+                                <i class="shopping cart icon"></i>
+                                Continuer la visite
                             </a>
                             <a style="float:right" href="{{ route('checkout.index') }}" class="ui right floated primary btn btn-primary">
                                 <i class="cc visa icon"></i> Proceder au payement
@@ -227,7 +100,7 @@
                         <h1 class="ui header">Aucun article dans votre panier !</h1>
                         <p class="lead">Visitez notre boutique pour choisir vos produits</p>
 
-                        <a class="ui button" href="{{ route('shop.index') }}">
+                        <a style="height:35px" class="btn btn-info" href="{{ route('shop.index') }}">
                             <i class="shopping cart icon"></i>
                             Continuer la visite
                         </a>
@@ -268,7 +141,6 @@
         <div class="grid_2">@include('partials.might-like')</div>
         <div class="grid_3">3</div>
     </div>
-</div>
 
 @endsection
 
