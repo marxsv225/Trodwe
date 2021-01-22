@@ -57,7 +57,7 @@
                             Plus Grand -> Plus Bas
                         </a></option>
 		            </select> --}}
-                    <div class="dropdown">
+                    {{-- <div class="dropdown">
                         <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button" data-toggle="dropdown">Trier du
                         <span class="caret"></span></button>
                         <ul class="dropdown-menu">
@@ -72,8 +72,8 @@
                                 </a>
                             </li>
                         </ul>
-                    </div>
-                    {{-- <div class="ui dropdown item">
+                    </div> --}}
+                    <div class="ui dropdown item">
                     Tri Par prix
                     <div class="menu">
                         <a class="item" href="{{ route('shop.index', ['category' => request()->category, 'sort' => 'low_high']) }}">
@@ -83,7 +83,7 @@
                             Plus Grand -> Plus Bas
                         </a>
                     </div>
-                </div> --}}
+                </div>
 		        </div>
     		</div>
 	        <div class="pager">

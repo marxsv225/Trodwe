@@ -42,8 +42,7 @@
             <div class="col-sm-8 row_2">
             <div class="header_bottom_right">
                 <div class="search">
-                <input type="text" value="Votre mot clé" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Votre mot clé';}">
-                <input type="submit" value="">
+					@include('partials.search')
                 </div>
                 <ul class="bag">
                     <a href="cart.html"><i class="bag_left"> 
