@@ -19,7 +19,7 @@ class AppServiceProvider extends ServiceProvider
     {
         //
     }
-
+ 
     /**
      * Bootstrap any application services.
      *
@@ -42,7 +42,6 @@ class AppServiceProvider extends ServiceProvider
             if ($newSubtotal < 0) $newSubtotal = 0;
             $newTax = $newSubtotal * $tax;
             $newTotal = $newSubtotal * (1 + $tax);
-
             $view->with([
                 'code'          => $code,
                 'subtotal'      => format_money($subtotal),

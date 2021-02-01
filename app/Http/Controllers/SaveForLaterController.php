@@ -27,7 +27,7 @@ class SaveForLaterController extends Controller
         if($exists->isNotEmpty()) {
             return redirect()
                 ->route('cart.index')
-                ->withWarning('Item already saved for later.');
+                ->withWarning("L'article est déjà sauvegardé pour plus tard.");
         }
 
         Cart::instance('saveForLater')
@@ -36,7 +36,7 @@ class SaveForLaterController extends Controller
 
         return redirect()
             ->route('cart.index')
-            ->withSuccess('Item has been saved for later.')
+            ->withSuccess("L'article a été enregistré pour plus tard .")
             ->withInfo("{$item->name}");
     }
 
@@ -50,7 +50,7 @@ class SaveForLaterController extends Controller
     {
         Cart::instance('saveForLater')->remove($id);
 
-        return back()->withWarning('Item was removed from save for later.');
+        return back()->withWarning("L'article a été supprimé de la liste des articles sauvegardés.");
     }
 
     /**
@@ -71,9 +71,7 @@ class SaveForLaterController extends Controller
             });
 
         if($exists->isNotEmpty()) {
-            return redirect()
-                ->route('cart.index')
-                ->withWarning('Item already exists in your cart.');
+            return redirect()->route('cart.index')->withWarning("L'article existe déjà dans votre panier");
         }
 
         Cart::instance('default')
@@ -82,7 +80,7 @@ class SaveForLaterController extends Controller
 
         return redirect()
             ->route('cart.index')
-            ->withSuccess('Item has move to your cart.')
+            ->withSuccess("L'article a été deplacé vers votre panier")
             ->withInfo("{$item->name}");
     }
 }

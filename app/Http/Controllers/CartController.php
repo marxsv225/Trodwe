@@ -86,7 +86,7 @@ class CartController extends Controller
         ]);
         
         if($v->fails()) {
-            session()->flash('errors', collect(['Quantity must be between 1 to 5']));
+            session()->flash('errors', collect(['La quantité ne doit pas excéder 5']));
             return response()->json(true, 422);
         }
 
@@ -94,8 +94,8 @@ class CartController extends Controller
 
         Cart::update($id, $request->quantity);
 
-        session()->flash('success', 'Cart item quantity updated.');
-        session()->flash('info', "Item ({$cart->model->name})'s quantity is updated to {$request->quantity} pieces.");
+        session()->flash('success', 'La quantité de larticle a été mise à jour.');
+        session()->flash('info', "La quantité de l'article ({$cart->model->name}) passe à {$request->quantity}.");
 
         return response()->json(true);
     }
@@ -113,7 +113,7 @@ class CartController extends Controller
         Cart::remove($id);
 
         return back()
-            ->withWarning('Item was removed from your cart.')
-            ->withInfo("{$cart->model->name} with quanitity of {$cart->qty}.");
+            ->withWarning('Article supprimé de votre panier.')
+            ->withInfo("{$cart->model->name} dont la quantiqté est {$cart->qty}.");
     }
 }

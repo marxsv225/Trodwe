@@ -21,7 +21,7 @@
 <!-- Custom Theme files -->
 <!--webfont-->
 <link href='http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
-<script type="text/javascript" src="{{asset('js/custom.js')}}"></script>
+{{-- <script type="text/javascript" src="{{asset('js/custom.js')}}"></script> --}}
 
 <!-- start menu -->
 <link href="{{asset('css/megamenu.css')}}" rel="stylesheet" type="text/css" media="all" />
@@ -29,6 +29,7 @@
 {{-- <link href="{{asset('css/icon.css')}}" rel='stylesheet' type='text/css' /> --}}
 {{-- <link href="css/semantic.css" rel='stylesheet' type='text/css' /> --}}
 <script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
+{{-- @yield('extra_css') --}}
 @yield('header')
 </head>
 <body>
@@ -42,15 +43,15 @@
             @include('includes.footer')
 
             @yield('footer')
+            @yield('extra-js')
         </div>
     </div>
 </div>
-
+<script type="text/javascript" src="{{asset('js/jquery.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('js/custom.js')}}"></script>
 <script defer src="{{asset('js/jquery.flexslider.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/megamenu.js')}}"></script>
-<script type="text/javascript" src="{{asset('js/jquery-1.11.1.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/bootstrap.js')}}"></script>
-<script type="text/javascript" src="{{asset('js/stripe-checkout.js')}}"></script>
 <script type="text/javascript">
     $(function(){
         SyntaxHighlighter.all();

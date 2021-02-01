@@ -144,4 +144,10 @@
 
 @endsection
 
+@section('footer')
 
+<script>
+    var selects = document.querySelectorAll('#quantity');
+    console.log(selects);
+</script>
+@endsection
