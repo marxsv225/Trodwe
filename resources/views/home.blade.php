@@ -18,8 +18,8 @@
               <section class="slider">
 				  <div class="flexslider">
 					<ul class="slides">
-						<li><img src="images/lap3.jpg" alt=""/></li>
-						<li><img src="images/lap4.jpg" alt=""/></li>
+						<li><img src="{{asset('images/lap3.jpg')}}" alt=""/></li>
+						<li><img src="{{asset('images/lap4.jpg')}}" alt=""/></li>
 					</ul>
 				  </div>
 	          </section>

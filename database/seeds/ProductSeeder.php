@@ -22,6 +22,7 @@ class ProductSeeder extends Seeder
                 'details' => '15inch 1 TB SSD, 32GB RAM',
                 'price' => rand(149999, 249999),
                 'description' =>'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum temporibus iusto ipsa, asperiores voluptas unde aspernatur praesentium in? Aliquam, dolore!',
+                'image' =>'laptop1.jpg',
             ])->categories()->attach(1);
         }
 
@@ -37,6 +38,7 @@ class ProductSeeder extends Seeder
                 'details' => '15inch 1 TB SSD, 32GB RAM',
                 'price' => rand(149999, 249999),
                 'description' =>'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum temporibus iusto ipsa, asperiores voluptas unde aspernatur praesentium in? Aliquam, dolore!',
+                'image' =>'desktop.jpg',
             ])->categories()->attach(2);
         }
 
@@ -48,6 +50,7 @@ class ProductSeeder extends Seeder
                 'details' => '15inch 1 TB SSD, 32GB RAM',
                 'price' => rand(149999, 249999),
                 'description' =>'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum temporibus iusto ipsa, asperiores voluptas unde aspernatur praesentium in? Aliquam, dolore!',
+                'image' =>'phone.jpg',
             ])->categories()->attach(3);
         }
 
@@ -59,6 +62,7 @@ class ProductSeeder extends Seeder
                 'details' => '15inch 1 TB SSD, 32GB RAM',
                 'price' => rand(149999, 249999),
                 'description' =>'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum temporibus iusto ipsa, asperiores voluptas unde aspernatur praesentium in? Aliquam, dolore!',
+                'image' =>'tablette.jpg',
             ])->categories()->attach(4);
         }
 
@@ -70,6 +74,7 @@ class ProductSeeder extends Seeder
                 'details' => '15inch 1 TB SSD, 32GB RAM',
                 'price' => rand(149999, 249999),
                 'description' =>'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum temporibus iusto ipsa, asperiores voluptas unde aspernatur praesentium in? Aliquam, dolore!',
+                'image' =>'tv.jpg',
             ])->categories()->attach(5);
         }
 
@@ -81,6 +86,7 @@ class ProductSeeder extends Seeder
                 'details' => '15inch 1 TB SSD, 32GB RAM',
                 'price' => rand(149999, 249999),
                 'description' =>'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum temporibus iusto ipsa, asperiores voluptas unde aspernatur praesentium in? Aliquam, dolore!',
+                'image' =>'camera.jpg',
             ])->categories()->attach(6);
         }
 
@@ -92,6 +98,7 @@ class ProductSeeder extends Seeder
                 'details' => '15inch 1 TB SSD, 32GB RAM',
                 'price' => rand(149999, 249999),
                 'description' =>'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum temporibus iusto ipsa, asperiores voluptas unde aspernatur praesentium in? Aliquam, dolore!',
+                'image' =>'appliance.jpg',
             ])->categories()->attach(7);
         }
 

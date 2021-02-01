@@ -102,7 +102,8 @@
                     </div>
                     <div class="form-group">        
                     <div class="col-sm-offset-2 col-sm-10">
-                        <button type="submit" class="btn btn-success">Completer la commande</button>
+                        <a href="{{route('checkout.store')}}" class="btn btn-success">Completer la commande</a>
+                        <button type="submit" ></button>
                     </div>
                     </div>
 
@@ -241,6 +242,6 @@
 
 @section('footer')
 
-    <script src="/js/stripe-checkout.js"></script>
+    <script src="{{asset('js/stripe-checkout.js')}}"></script>
 
 @endsection

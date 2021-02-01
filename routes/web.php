@@ -31,6 +31,13 @@ Route::post('save-for-later/{product}/move-to-cart', 'SaveForLaterController@mov
 Route::delete('save-for-later/{product}', 'SaveForLaterController@destroy')->name('saveforlater.destroy');
 
 Route::get('checkout', 'CheckoutController@index')->name('checkout.index');
+Route::get('paiment', 'CheckoutController@store')->name('checkout.store');
+Route::get('merci', 'CheckoutController@thanks')->name('checkout.thanks');
 
 Route::post('coupon', 'CouponController@store')->name('coupon.store');
 Route::delete('coupon', 'CouponController@destroy')->name('coupon.destroy');
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
