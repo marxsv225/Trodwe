@@ -839,7 +839,7 @@ h1.contact_head{
 }
 /*--cart--*/
 .cart{
-	min-height:500px;
+	min-height:130px;
 }
 .cart h1, .cart h2{
   margin: 10px 0;
