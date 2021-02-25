@@ -48,9 +48,10 @@
     </div>
 </div>
 <script type="text/javascript" src="{{asset('js/jquery.min.js')}}"></script>
-<script type="text/javascript" src="{{asset('js/custom.js')}}"></script>
-<script defer src="{{asset('js/jquery.flexslider.js')}}"></script>
-<script type="text/javascript" src="{{asset('js/megamenu.js')}}"></script>
+
+ <script type="text/javascript" src="{{asset('js/custom.js')}}"></script>
+<script defer src="{{asset('js/jquery.flexslider.js')}}"></script> 
+ <script type="text/javascript" src="{{asset('js/megamenu.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/bootstrap.js')}}"></script>
 <script type="text/javascript">
     $(function(){
@@ -67,6 +68,6 @@
 
 
     $('.dropdown-toggle').dropdown();
-</script>
+</script> 
 </body>
 </html>

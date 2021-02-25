@@ -60,10 +60,10 @@
 	  <div class="single_top">
 	       <div class="col-md-9 single_right">
 	   	       <div class="grid images_3_of_2">
-						<ul id="etalage">
+						<ul id="etalage" style="">
 							<li>
 								<a href="optionallink.html">
-									<img class="etalage_thumb_image" width="300" src="/images/laptop.jpg" class="img-responsive" />
+									<img class="etalage_thumb_image" width="300" src="{{ asset('/images/'.$product->image) }}" class="img-responsive" />
 									{{-- <img class="etalage_source_image" width="150" src="/images/laptop.jpg" class="img-responsive" title="" /> --}}
 								</a>
 							</li>
@@ -84,7 +84,7 @@
 				  </div> 
 				  <div class="desc1 span_3_of_2">
 				    <h1>{{ $product->name }}</h1>
-				    <p class="m_5">{{ $product->details }} <span class="reducedfrom">{{ $product->present_price }}</span> <a href="#">click for offer</a></p>
+				     <p class="m_5">{{ $product->details }} <span class="reducedfrom">{{ $product->present_price }}</span> {{--<a href="#">click for offer</a>--}}</p> 
 				    <div class="btn_form">
 						<form action="{{ route('cart.store') }}" method="POST">
                             @csrf

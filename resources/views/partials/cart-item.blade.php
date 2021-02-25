@@ -147,15 +147,17 @@ Array.form(selects).forEach((element)=>{
                 id="save-for-later-{{ $item->rowId }}" class="ui left floated">
                 @csrf
             </form>
-
+          
             <div class="ui right floated" style="float:right">
                 <label for="quantity">quantity:</label>
-                <select name="quantity" id="quantity" class="quantity" data-id="{{ $item->rowId }}">
+                <select name="quantity" id="quantity" class="quantity" data-id="{{ $item->rowId }}" >
                     @foreach (range(1, 5) as $index)
                         <option value="{{ $index }}" @if($item->qty == $index) selected @endif>{{ $index }}</option>
                     @endforeach
                 </select>
             </div>
+      
         </div>
     </div>
 </div>
+

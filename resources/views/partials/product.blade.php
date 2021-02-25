@@ -7,7 +7,7 @@
             <p>{{ $product->details }}</p>
             <p>{{ $product->price }} F cfa</p>
         </div>
-        <a href="{{ $product->path() }}" class="btn btn-success btn-block">
+        <a href="{{ $product->path() }}" class="btn btn-success btn-block rounded">
             <div class=" panel-heading">Voir les détails du produit</div>
         </a>
     </div>

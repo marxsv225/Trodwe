@@ -7,7 +7,7 @@
     <tr>
         <td>
             <div class="image">
-                <img src="/images/laptop.jpg" class="img-responsive"  width="120">
+                <img src="{{ asset('/images/laptop.jpg') }}" class="img-responsive"  width="120">
             </div>
         </td>
         <td>
