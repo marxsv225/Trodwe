@@ -145,9 +145,48 @@
 @endsection
 
 @section('footer')
+{{-- <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script> --}}
+<script type="text/javascript" src="{{asset('js/newjquery.js')}}"></script>
 
 <script>
-    var selects = document.querySelectorAll('#quantity');
-    console.log(selects);
-</script>
+   
+    jQuery(document).ready(function(){
+  
+  $("#quantity" ).change(function() {
+  var quantity = $("#quantity").val() ;
+  var id = $(this).attr("data-id"); 
+  var url = '{{ route("cart.update", ":id") }}';
+
+  url = url.replace(':id',id);
+  
+    $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+
+    $.ajax({
+        url: url,
+        method: 'patch',
+            data: {
+                quantity: quantity,
+            },
+            success: function(result){
+                location.reload();
+            }
+    });    
+      
+    
+    });
+
+  });
+
+
+  
+  
+      
+  //   requete ajax
+  
+  </script>
+  
 @endsection

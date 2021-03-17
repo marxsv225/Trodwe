@@ -23,7 +23,7 @@ class ShopController extends Controller
             });
         }
         else {
-            $products->featured()->inRandomOrder()->take(12);
+            $products->featured()->inRandomOrder()->orderBy('created_at', 'DESC')->take(12);
         }
 
         if($request->sort == 'low_high') {

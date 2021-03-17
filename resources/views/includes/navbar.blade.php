@@ -7,11 +7,11 @@
 					  <li class="active grid"><a href="{{ route('shop.index') }}">La Boutique</a></li>	
 				      <li><a class="color1" href="#">A propos</a></li>
 				<li><a class="color6" href="#">Blog</a></li>
-				<li><a class="color6" href="contact.html">Conact</a></li>
+				<li><a class="color6" href="#">Contact</a></li>
 			  </ul>
 			</div>
 			<div class="col-sm-3 header-top-right">
-			     <div class="drop_buttons">
+			     {{-- <div class="drop_buttons">
 			  	   	<select class="drop-down ">
 				       <option value="1">Dollar</option>
 				       <option value="2">Euro</option>
@@ -23,10 +23,10 @@
 						<option value="3">German</option>
 					</select>
    			       <div class="clearfix"></div>
-   			    </div>
-   			    <div class="register-info">
+   			    </div> --}}
+   			    <div class="register-info text-right">
 				    <ul>
-						<li><a href="login.html">Login</a></li>
+						<li><a href="login.html">Connexion</a></li>
 					</ul>
 			    </div>
 				<div class="clearfix"> </div>
@@ -52,7 +52,7 @@
 							@endif
 						</span> 
 					</i></a>
-                    <a href="cart.html"><li class="bag_right"><p>20500 F</p> </li></a>
+                    {{-- <a href="cart.html"><li class="bag_right"><p></p> </li></a> --}}
                     <div class="clearfix"> </div>
                 </ul>
                 <div class="clearfix"> </div>

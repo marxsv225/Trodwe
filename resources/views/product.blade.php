@@ -60,10 +60,10 @@
 	  <div class="single_top">
 	       <div class="col-md-9 single_right">
 	   	       <div class="grid images_3_of_2">
-						<ul id="etalage">
+						<ul id="etalage" style="">
 							<li>
 								<a href="optionallink.html">
-									<img class="etalage_thumb_image" width="300" src="/images/laptop.jpg" class="img-responsive" />
+									<img class="etalage_thumb_image" width="300" src="{{ asset('/images/'.$product->image) }}" class="img-responsive" />
 									{{-- <img class="etalage_source_image" width="150" src="/images/laptop.jpg" class="img-responsive" title="" /> --}}
 								</a>
 							</li>
@@ -84,7 +84,7 @@
 				  </div> 
 				  <div class="desc1 span_3_of_2">
 				    <h1>{{ $product->name }}</h1>
-				    <p class="m_5">{{ $product->details }} <span class="reducedfrom">{{ $product->present_price }}</span> <a href="#">click for offer</a></p>
+				     <p class="m_5">{{ $product->details }} <span class="reducedfrom">{{ $product->present_price }}</span> {{--<a href="#">click for offer</a>--}}</p> 
 				    <div class="btn_form">
 						<form action="{{ route('cart.store') }}" method="POST">
                             @csrf
@@ -99,8 +99,8 @@
                             </button>
                         </form>
 					 </div>
-					 <span class="m_link"><a href="#">Connectez-vous pour ajouter à votre liste favoris</a> </span>
-					 <p class="m_text2">{{ $product->description }}</p>
+					 {{-- <span class="m_link"><a href="#">Connectez-vous pour ajouter à votre liste favoris</a> </span>
+					 <p class="m_text2">{{ $product->description }}</p> --}}
 				  </div>
 				  <div class="clearfix"></div>	
        </div>
@@ -121,8 +121,8 @@
       <div class="clearfix"> </div>
      </div>
        <div class="toogle">
-     	<h2>Product Details</h2>
-     	<p class="m_text2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero.</p>
+     	{{-- <h2>Product Details</h2> --}}
+     	{{-- <p class="m_text2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero.</p> --}}
      </div>
         <div class="single_span_3">
                 @include('partials.might-like')

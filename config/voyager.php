@@ -13,6 +13,8 @@ return [
     'user' => [
         'add_default_role_on_register' => true,
         'default_role'                 => 'user',
+        'admin_permission'             => 'browse_admin',
+        'namespace'                    => App\User::class,
         'default_avatar'               => 'users/default.png',
         'redirect'                     => '/admin',
     ],
@@ -44,6 +46,17 @@ return [
     'models' => [
         //'namespace' => 'App\\',
     ],
+
+   /*
+    |--------------------------------------------------------------------------
+    | Assets Config
+    |--------------------------------------------------------------------------
+    |
+    |
+    */
+
+    'assets_path' => '/vendor/tcg/voyager/assets',
+
 
     /*
     |--------------------------------------------------------------------------
@@ -104,13 +117,14 @@ return [
         /*
          * Select default language
          */
-        'default' => 'en',
+        'default' => 'fr',
 
         /*
          * Select languages that are supported.
          */
         'locales' => [
             'en',
+            'fr',
             //'pt',
         ],
     ],
@@ -181,7 +195,7 @@ return [
     |
     */
 
-    'primary_color' => '#22A7F0',
+    'primary_color' => '#075d7e',
 
     'show_dev_tips' => true, // Show development tip "How To Use:" in Menu and Settings
 

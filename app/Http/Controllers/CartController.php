@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Product;
 use Cart;
+use GuzzleHttp\Middleware;
 use Illuminate\Support\Facades\Validator;
 
 class CartController extends Controller
@@ -13,7 +14,13 @@ class CartController extends Controller
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
+     * 
+     * 
      */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function index()
     {
         $mightLike = Product::mightLike()->get();
@@ -41,7 +48,7 @@ class CartController extends Controller
                 ->withWarning('Cet article existe déjà dans votre panier.');
         }
 
-        Cart::add($request->id, $request->name, 1, $request->price)
+        Cart::add($request->id, $request->name, auth()->user()->id, $request->price)
             ->associate('App\Product');
 
         return redirect()

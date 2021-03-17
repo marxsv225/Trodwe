@@ -73,13 +73,14 @@
                             </li>
                         </ul>
                     </div> --}}
-                    <div class="ui dropdown item">
+                    <div class="ui dropdown item m-3">
                     Tri Par prix
-                    <div class="menu">
-                        <a class="item" href="{{ route('shop.index', ['category' => request()->category, 'sort' => 'low_high']) }}">
+                    <div class="menu m-2">
+                        
+                        <a class="item btn btn-primary mb-2" href="{{ route('shop.index', ['category' => request()->category, 'sort' => 'low_high']) }}">
                             Plus Bas -> Plus Grand
                         </a>
-                        <a class="item" href="{{ route('shop.index', ['category' => request()->category, 'sort' => 'high_low']) }}">
+                        <a class="item btn btn-primary" href="{{ route('shop.index', ['category' => request()->category, 'sort' => 'high_low']) }}">
                             Plus Grand -> Plus Bas
                         </a>
                     </div>
