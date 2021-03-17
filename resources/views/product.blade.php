@@ -99,8 +99,8 @@
                             </button>
                         </form>
 					 </div>
-					 <span class="m_link"><a href="#">Connectez-vous pour ajouter à votre liste favoris</a> </span>
-					 <p class="m_text2">{{ $product->description }}</p>
+					 {{-- <span class="m_link"><a href="#">Connectez-vous pour ajouter à votre liste favoris</a> </span>
+					 <p class="m_text2">{{ $product->description }}</p> --}}
 				  </div>
 				  <div class="clearfix"></div>	
        </div>
@@ -121,8 +121,8 @@
       <div class="clearfix"> </div>
      </div>
        <div class="toogle">
-     	<h2>Product Details</h2>
-     	<p class="m_text2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero.</p>
+     	{{-- <h2>Product Details</h2> --}}
+     	{{-- <p class="m_text2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero.</p> --}}
      </div>
         <div class="single_span_3">
                 @include('partials.might-like')
