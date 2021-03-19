@@ -132,7 +132,7 @@ ul.bag li.bag_right p{
 }
 .drop-down {
   float: left;
-  width: 46%;
+  width: 60%;
   background: none;
   border: none;
   outline: none;
@@ -232,7 +232,12 @@ ul.bag li.bag_right p{
 }
 .btn-1 {
 	color: #fff;
-	background:#15be74;
+	background:#119739;
+}
+
+.btn-1:hover{
+  color: #fff;
+  background-color: #075d7e;
 }
 .banner_desc a, .span_3 a{ 
 	position: relative;

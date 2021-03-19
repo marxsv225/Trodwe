@@ -7,10 +7,10 @@
 			<img src="images/laptop.jpg" class="img-responsive" alt=""/>
 			<div class="banner_desc">
 				<h1>Lenovo </h1>
-				<h2>Inspire 18900 Pcv</h2>
+				<h2>Inspire 18900</h2>
 				<h5>900 000 Fcfa
 					</h5>
-			    <a href="#" class="btn1 btn4 btn-1 btn1-1b">+ Détails</a>
+			    <a href="#" class="btn1 btn4 btn-1 btn1-1b">Nouvel arrivage</a>
 			</div>
 		</div>
 		<div class="col-md-9 banner_right">
@@ -45,7 +45,7 @@
         </div>
 	    <div class="grid_3">
 		<div class="col-md-6 box_2">
-			<div class="section_group">
+			<div class="box-3">
 		      	<div class="col_1_of_2 span_1_of_2">
 		      		<img src="images/lap1.jpg" class="img-responsive" alt=""/>
 		        </div>
@@ -57,17 +57,7 @@
 		</div>
 		<div class="col-md-6">
 			<div class="box_3">
-			  <div class="col_1_of_2 span_1_of_2 span_3">
-		      		<h3>Promo 50%</h3>
-                  <h4>200 000 F</h4>
-                  <p>Lorem Ipsummmmmmmmmm</p>
-                  <a href="#" class="btn1 btn6 btn-1 btn1-1b">Ajouter au panier</a>
-		        </div>
-                <div class="col_1_of_2 span_1_of_2 span_4">
-                   <div class="span_5">
-		      		 <img src="images/pic9.png" class="img-responsive" alt=""/>
-		      	    </div>
-		        </div>
+				<img src="{{ asset('images/ordi.png') }}" alt="" class="img-responsive">
                 <div class="clearfix"> </div>
             </div>
 		</div>

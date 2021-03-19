@@ -16,7 +16,8 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 Route::get('/home', function(){
     return view('auth/home');
-})->middleware('auth');
+})->middleware('auth')->name('myprofile');
+
 Route::get('/', 'HomeController@index')->name('home');
 
 Route::get('shop', 'ShopController@index')->name('shop.index');
