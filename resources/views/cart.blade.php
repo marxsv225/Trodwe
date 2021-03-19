@@ -5,8 +5,8 @@
 
     <div class="col-md-12">
         <div class="alert alert-info" style="margin-top:20px">
-            <a href="{{ route('home') }}" class="section">Home</a>
-            <i class="right angle icon divider"></i>
+            <a href="{{ route('home') }}" class="section">Accueil</a>
+            <i class="right angle icon divider">-</i>
             <a class="active section">Cart</a>
         </div>
     </div>

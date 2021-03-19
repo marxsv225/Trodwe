@@ -4,30 +4,24 @@
     <div class="header_top">
 		  <div class="col-sm-9 h_menu4">
 				<ul class="megamenu skyblue">
-					  <li class="active grid"><a href="{{ route('shop.index') }}">La Boutique</a></li>	
-				      <li><a class="color1" href="#">A propos</a></li>
-				<li><a class="color6" href="#">Blog</a></li>
-				<li><a class="color6" href="#">Contact</a></li>
+					  <li><a class="color7" href="{{ route('shop.index') }}">La Boutique</a></li>	
+				      <li><a class="color7" href="#">A propos</a></li>
+				<li><a class="color7" href="#">Blog</a></li>
+				<li><a class="color7" href="#">Contact</a></li>
 			  </ul>
 			</div>
 			<div class="col-sm-3 header-top-right">
-			     {{-- <div class="drop_buttons">
-			  	   	<select class="drop-down ">
-				       <option value="1">Dollar</option>
-				       <option value="2">Euro</option>
-				       <option value="2">F cfa</option>
-					</select>
-   				    <select class="drop-down drop-down-in">
-						<option value="1">English</option>
-						<option value="2">French</option>
-						<option value="3">German</option>
-					</select>
-   			       <div class="clearfix"></div>
-   			    </div> --}}
    			    <div class="register-info text-right">
-				    <ul>
-						<li><a href="login.html">Connexion</a></li>
-					</ul>
+					   @if (auth()->user())
+						<div class="drop_buttons">
+							<a href="{{ route('myprofile') }}"><img class="card-img-top" src="{{ asset('storage/'.auth()->user()->avatar) }}" alt="Card image" style="width:30px"></a>
+						</div>
+					   @else
+					   <ul>
+							<li><a href="{{ route('login') }}">Connexion</a></li>
+						</ul>
+					   @endif
+				    
 			    </div>
 				<div class="clearfix"> </div>
    			 </div>
@@ -45,14 +39,13 @@
 					@include('partials.search')
                 </div>
                 <ul class="bag">
-                    <a href="cart.html"><i class="bag_left"> 
-						<span class="badge" style="float:right">
+                    <a href="{{ route('cart.index') }}"><i class="bag_left"> 
+						<span class="label label-danger" style="float:right; font-size:18px">
 							@if(Cart::instance('default')->count())
 								{{ Cart::instance('default')->count() }}
 							@endif
 						</span> 
 					</i></a>
-                    {{-- <a href="cart.html"><li class="bag_right"><p></p> </li></a> --}}
                     <div class="clearfix"> </div>
                 </ul>
                 <div class="clearfix"> </div>

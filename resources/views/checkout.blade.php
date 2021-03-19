@@ -110,56 +110,7 @@
                     
                 </form>
 
-                {{-- <form class="ui " id="payment-form">
-                    <div class="field form-group" style="margin-bottom:10">
-                        <label class="col-md-4">Adresse Email</label>
-                        <div class="col-md-8">
-                            <input class="form-control" type="text" name="email" placeholder="Entrer votre Email">
-                        </div>
-                    </div>
-
-                    <div class="field form-group">
-                        <label class="col-md-4">Nom</label>
-                        <div class="col-md-8">
-                            <input type="text" name="name" placeholder="Entrer Votre nom">
-                        </div>
-                    </div>
-
-                    <div class="field">
-                        <label>Addresse</label>
-                        <input type="text" name="address" placeholder="Entrer votre addresse">
-                    </div>
-
-                    <div class="field">
-                        <div class="two fields">
-                            <div class="field">
-                                <label>Commune</label>
-                                <input type="text" name="city" placeholder="Entrer votre commune">
-                            </div>
-                            <div class="field">
-                                <label>Province</label>
-                                <input type="text" name="province" placeholder="Enter Province">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="field">
-                        <div class="two fields">
-                            <div class="field">
-                                <label>Code postal</label>
-                                <input type="text" name="postal_code" placeholder="Entrer votre code postal">
-                            </div>
-                            <div class="field">
-                                <label>Téléphone</label>
-                                <input type="text" name="phone_number" placeholder="Entrer votre numéro de téléphone">
-                            </div>
-                        </div>
-                    </div>
-
-                    
-
-                    <button class="ui fluid button" type="submit">Completer la commande</button>
-                </form> --}}
+                
 
             </div>
 

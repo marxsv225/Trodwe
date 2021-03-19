@@ -7,52 +7,14 @@
     <div class="content-box">
         <div class="col-md-12">
             <div class="alert alert-info" style="margin-top:20px;">
-                <a href="{{ route('home') }}" class="section">Home</a>
+                <a href="{{ route('home') }}" class="section">Accueil</a>
                 <i class="right angle icon divider"> > </i>
-                <a href="{{ route('shop.index') }}" class="section">Shop</a>
+                <a href="{{ route('shop.index') }}" class="section">Boutique</a>
                 <i class="right angle icon divider"> > </i>
                 <span class="active section">{{ $product->name }}</span>
             </div>
         </div>
     </div>
-{{-- 
-    <div class="ui vertical segment product">
-        <div class="ui stackable grid container">
-            <div class="row">
-
-                <div class="six wide column">
-                    <img src="/images/laptop.jpg" class="ui large bordered rounded image">
-                </div>
-
-                <div class="ten wide right floated column">
-                    <h1 class="ui header">{{ $product->name }}</h1>
-                    <p class="lead">{{ $product->details }}</p>
-
-                    <h1 class="ui green header">{{ $product->present_price }}</h2>
-
-                    <div class="ui product-content">
-                        {{ $product->description }}
-                    </div>
-                    
-                    <form action="{{ route('cart.store') }}" method="POST">
-                        @csrf
-
-                        <input type="hidden" name="id" value="{{ $product->id }}">
-                        <input type="hidden" name="name" value="{{ $product->name }}">
-                        <input type="hidden" name="price" value="{{ $product->price }}">
-
-                        <button class="ui button" type="submit">
-                            <i class="shopping cart icon"></i>
-                            Ajouter au panier
-                        </button>
-                    </form>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-
-    @include('partials.might-like') --}}
 
 
 <div class="content_box">
@@ -64,21 +26,8 @@
 							<li>
 								<a href="optionallink.html">
 									<img class="etalage_thumb_image" width="300" src="{{ asset('/images/'.$product->image) }}" class="img-responsive" />
-									{{-- <img class="etalage_source_image" width="150" src="/images/laptop.jpg" class="img-responsive" title="" /> --}}
 								</a>
 							</li>
-							{{-- <li>
-								<img class="etalage_thumb_image" width="150" src="/images/laptop.jpg" class="img-responsive" />
-								<img class="etalage_source_image" width="150" src="/images/laptop.jpg" class="img-responsive" title="" />
-							</li>
-							<li>
-								<img class="etalage_thumb_image" width="150" src="/images/laptop.jpg" class="img-responsive"  />
-								<img class="etalage_source_image" width="150" src="/images/laptop.jpg"class="img-responsive"  />
-							</li>
-						    <li>
-								<img class="etalage_thumb_image" width="150" src="/images/laptop.jpg" class="img-responsive"  />
-								<img class="etalage_source_image" width="150" src="/images/laptop.jpg"class="img-responsive"  />
-							</li> --}}
 						</ul>
 						 <div class="clearfix"></div>		
 				  </div> 
@@ -99,8 +48,6 @@
                             </button>
                         </form>
 					 </div>
-					 {{-- <span class="m_link"><a href="#">Connectez-vous pour ajouter à votre liste favoris</a> </span>
-					 <p class="m_text2">{{ $product->description }}</p> --}}
 				  </div>
 				  <div class="clearfix"></div>	
        </div>
@@ -121,8 +68,6 @@
       <div class="clearfix"> </div>
      </div>
        <div class="toogle">
-     	{{-- <h2>Product Details</h2> --}}
-     	{{-- <p class="m_text2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero.</p> --}}
      </div>
         <div class="single_span_3">
                 @include('partials.might-like')
