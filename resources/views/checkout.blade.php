@@ -12,7 +12,7 @@
 
     <div class="col-md-12">
         <div class="alert alert-info" style="margin-top:20px">
-            <a href="{{ route('home') }}" class="section">Home</a>
+            <a href="{{ route('home') }}" class="section">Accueil </a>
             <i class="right angle icon divider"> > </i>
             <a class="active section">Payement</a>
         </div>
@@ -39,7 +39,7 @@
 
                 <h3 class="ui header">Détails de la facturation</h3>
 
-                <form class="form-horizontal" action="/action_page.php">
+                {{-- <form class="form-horizontal" action="/action_page.php">
                     <div class="form-group">
                     <label class="control-label col-sm-2" for="email">Email:</label>
                     <div class="col-sm-10">
@@ -108,7 +108,7 @@
                     </div>
 
                     
-                </form>
+                </form> --}}
 
                 
 
