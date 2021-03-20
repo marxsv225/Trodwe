@@ -139,7 +139,7 @@
             </div>
         </div>
         <div class="grid_2">@include('partials.might-like')</div>
-        <div class="grid_3">3</div>
+        <div class="grid_3"></div>
     </div>
 
 @endsection
